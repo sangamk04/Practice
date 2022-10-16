@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="#">
+    
+</head>
+
+
+<body>
+
+<button onclick="increment()"> increment</button>
+<h2 id="count"></h2>
+<button onclick="decrement()"> decrement</button> 
+
+</body>
+
+</html>
+<script>
+
+var data = 0; 
+
+  document.getElementById("count").innerText = data;
+   function increment() {
+    //   data = data +1;
+    data++
+      document.getElementById("count").innerText = data;
+  }
+
+  function decrement() {
+    //   data = data - 1;
+
+    data--
+      document.getElementById("count").innerText = data;
+  }
+
+
+// var data=0;
+
+// document.getElementById("count").innerText=data;
+
+// function increment(){
+//     data=data+1;
+
+//     document.getElementById("count").innerText=data;
+
+//     console.log(data)
+
+// }
+
+// function decrement(){
+//     data=data-1;
+//     document.getElementById("count").innerText=data;
+
+//     console.log(data)
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

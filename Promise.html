@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //    Promise 
+// function prom(x){
+//     return promis=new Promise((res,rej)=>{
+//         if(x==1){
+//             res("num is resolve")
+//         }
+//         else{
+//             rej("number is reject")
+//         }
+//     })
+// }
+// let data=prom(1)
+// .then((res)=>console.log(res))
+// .catch((err)=>console.log(err))
+
+
+function prom(x){
+    return promis=new Promise((res,rej)=>{
+        if(x%2==1){
+            res("num is odd")
+        }
+        else{
+            rej("number is even")
+        }
+    })
+}
+let data=prom(3)
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
+
+</script>

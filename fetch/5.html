@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     const getData = async()=>{
+        let res = await fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products")
+        let data = await res.json()
+        // display(data.data)
+        console.log(data)
+
+        // let n = data.data;
+        // display(n)
+    } 
+    getData()
+    // const display=(n)=>{
+    //     n.map((data)=>console.log(data.data))
+    // }
+</script>

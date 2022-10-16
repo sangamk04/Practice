@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --blue: blue;
+            --white: white;
+            --teal:teal;
+        }
+        /* body{
+            background-color: var(--blue);
+        } */
+        #sam{
+            height: 100px;
+            width: 100px;
+            background-color: var(--white);
+        }
+        #mini{
+            color: var(--blue);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sam"></div>
+
+    <h1 id="mini">mini</h1>
+
+    
+</body>
+</html>
+
+<!-- CSS variables have access to the DOM, which means that you can create variables 
+with local or global scope, change the variables with JavaScript, and change the
+ variables based on media queries.
+
+A good way to use CSS variables is when it comes to the colors of your design.
+ Instead of copy and paste the same colors over and over again, you can place them in variables. -->

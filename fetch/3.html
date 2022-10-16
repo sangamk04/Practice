@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="body"></div>
+</body>
+</html>
+<script>
+    // const getData = async()=>{
+    //     let res = await fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products")
+    //     let data = await res.json()
+    //     console.log(data)
+    // } 
+    // getData()
+
+
+
+    const getData = async()=>{
+        let res = await fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products?limit=30")
+        let data = await res.json()
+        display(data.data)
+        console.log(data.data)
+    } 
+    getData()
+
+    const display=(data)=>{
+        data.forEach((e)=>{
+            let div = document.createElement("div")
+            let img = document.createElement("img")
+            img.src= e.image
+
+            let brand= document.createElement("h1")
+            brand.innerText= e.brand
+
+            div.append(img)
+
+            document.querySelector("#body").append(div)
+        })
+    }
+  
+</script>

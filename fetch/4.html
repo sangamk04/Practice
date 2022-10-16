@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+
+#sam{
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    gap:10px;
+}
+@media all and (min-width: 800px) and (max-width: 1200px){
+    #sam{
+        grid-template-columns: 1fr  1fr 1fr;
+    }
+}
+@media all and (min-width: 600px) and (max-width: 800px){
+    #sam{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media all and (min-width: 100px) and (max-width: 600px){
+    #sam{
+        grid-template-columns: 1fr  ;
+    }
+}
+
+p{
+    width: 80%;
+    color: red;
+}
+img{
+    height: 100px;
+    width: 150px;
+}
+#head{
+    color: red;
+}
+    </style>
+
+</head>
+<body>
+    <h1 id="head" style="text-align:center">Sanagm Shoap</h1>
+    <div id="sam"></div>
+   
+</body>
+</html>
+<script>
+    const getData= async()=>{
+        let res= await fetch("https://dummyjson.com/products?page=${pageNo}&limit=80&orderBy=${sort}")
+        let products = await res.json()
+        dispaly(products.products)
+        console.log(products.products)
+    }
+    getData()
+
+    const dispaly= (products) =>{
+        products.forEach((e)=> {
+            let div = document.createElement("div")
+            let id =document.createElement("p")
+            id.innerText=e.id
+
+            let thumbnail = document.createElement("img")
+            thumbnail.src= e.thumbnail
+
+            // let images = document.createElement("img")
+            // images.src= e.images
+
+            let title =document.createElement("h2")
+            title.innerText=e.title
+
+            let description =document.createElement("p")
+            description.innerText=e.description
+
+            let price =document.createElement("h3")
+            price.innerText=e.price+"  "+"$"
+
+            let rating =document.createElement("p")
+            rating.innerText=e.rating
+
+            let stock =document.createElement("p")
+            stock.innerText=e.stock
+
+
+            div.append(id,title,description,price,rating,thumbnail,stock)
+
+            document.querySelector("#sam").append(div)
+        })
+    }
+</script> 

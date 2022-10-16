@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <h1>Hello</h1>
+        <div id="container"></div>
+      </div>
+</body>
+</html>
+<script>
+    const getData=()=>{   
+    fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products")
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        console.log(data.data)
+        myfun(data.data)
+    })
+}
+
+getData()
+
+ function myfun(data){
+   data.map((elem)=>{
+    
+    let div1=document.createElement("div")
+    div1.setAttribute("class","div")
+
+    let brands=document.createElement("brands")
+    brands.innerText= elem.brand
+    
+    let img=document.createElement("img")
+    img.src=elem.image
+    div1.append(brands,img)
+    document.getElementById("container").append(div1)
+   })
+}
+</script>

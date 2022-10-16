@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <h1>Hello</h1>
+        <div id="container"></div>
+      </div>
+        
+</body>
+</html>
+<script>
+//   https://randomuser.me/api/
+const getresults=()=>{   
+    fetch("https://randomuser.me/api/")
+    .then((res)=>{
+        return res.json()
+    })
+    .then((results)=>{
+        console.log(results.results)
+        myfun(results.results)
+    })
+}
+getresults()
+function myfun(results){
+results.map((elem)=>{
+
+    let div1=document.createElement("div")
+    div1.setAttribute("class","div")
+
+    let gender=document.createElement("gender")
+    gender.innerText=elem.gender
+
+    div1.append(gender)
+    document.getElementById("container").append(div1)
+
+})
+}
+</script>
