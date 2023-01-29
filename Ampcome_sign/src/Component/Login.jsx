@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import img from "../assets/Annotation1.png";
 import "../Style/Login.css"
-// import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
 const [destination,setdestination] = useState("")
      const navigate=useNavigate()
     const submit= (e) =>{
-    
-    //   console.log(e.destination)
+  
    const object={
     user:destination
    }
