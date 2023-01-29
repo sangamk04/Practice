@@ -1,0 +1,75 @@
+.MainContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.LoginDash{
+    width: 50%;
+    /* border: 1px solid red; */
+    height: 99.77vh;
+   
+   background-color: #f0f4fc ;
+    text-align: center;
+}
+.LoginDashDetails{
+     margin-top: 100px; 
+}
+
+.LoginDashDetails h2{
+    color:  #203765;
+}
+
+.LoginDashDetails p{
+    color:  #203765;
+    font-size: 15px;
+}
+
+.LoginDetails{
+    width: 50%;
+    height: 99.77vh;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginDetailsdata{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+}
+
+.LoginDetailsdata input {
+   height: 30px;
+   /* border-radius: 4px; */
+   outline: none;
+   padding-left: 20px;
+   /* border: 0.2px thin gray; */
+    color: rgba(211, 211, 211,0.2);
+   
+}
+
+.LoginDetailsdata select {
+    height: 37px;
+    outline: none;
+    padding-left: 20px;
+    color:  #203765;
+    
+ }
+
+#login{
+    background-color: #fc6964;
+    border-radius: 10px;
+    height: 34px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    border:none;
+}
+
+.LoginDetailsdata h3{
+    color:  #203765;
+}
+

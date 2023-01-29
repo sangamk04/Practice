@@ -1,0 +1,35 @@
+
+#customers {
+    font-family: 'Inter';
+    color: gray;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
+
+  .invoice{
+    color: #a12424;
+  }
+  .patient::first-line{
+    color: #279AF1;
+  }
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#F0F4FD;
+    color: black;
+  }

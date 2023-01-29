@@ -1,0 +1,42 @@
+.ActivitySecContainer{
+    width: 340px;
+    height: 550px;
+    border: 1px solid rgb(187, 183, 183);
+    margin-top: -150px;
+    background: #fff;
+    border-radius: 10px;
+}
+.ActivityData{
+    width: 91%;
+    margin:30px auto;
+    
+    
+}
+.ActivityHead{
+    margin-top: 14px;
+}
+.ActivityName{
+    font-weight: bold;
+    color: gray;
+    font-size: 20px;
+}
+
+.ActivityIconData{
+    display: flex;
+    gap:16px;
+    margin-top: 20px;
+}
+.imgactive{
+    width: 22px;
+}
+.activedata2 p{
+    width: 240px;
+     font-size: 11px;
+     margin-top: -1px;
+    
+}
+.activedata1 span{
+    font-size: 15px;
+    font-weight: bold;
+    color:#29375f ;
+}

@@ -1,0 +1,371 @@
+.Namenav {
+  width: 100%;
+  height: 220px;
+  background-color: #203765;
+}
+.NamenavData {
+  max-width: 70%;
+  /* background-color: aliceblue; */
+  height: 50%;
+  padding-top: 20px;
+  margin: auto;
+  /*  */
+}
+
+.NamenavData p {
+  margin-top: -1px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.Welcom {
+  font-size: 36px;
+  color: #fff;
+  /* font-weight: thin; */
+  letter-spacing: 2px;
+}
+
+.Name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sideBarar{
+    background-color: #203765;
+    width: 70px;
+    
+    
+}
+
+
+
+.sideBarar div:hover{
+    background-color:rgba(211, 211, 211,0.2);
+}
+
+
+.imgUser img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+.Logosimg{
+    padding: 10px;
+    margin-top: 220px;
+}
+
+.Logos{
+    color: lightgray;
+    padding: 10px;
+   
+}
+
+.Logos :hover{
+    color: white;
+}
+
+
+.MainDataContainer{
+    display: flex;
+    gap: 30px;
+}
+
+.MainDataContainerAll{
+    width: 63%;
+    /* border: 1px solid rebeccapurple; */
+}
+.TotalEarningContainer{
+    display: flex;
+    /* width: 750px; */
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+   border: 1px solid lightgray; 
+   margin-top: -50px;
+   
+   background-color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    
+}
+.TotalEarningContainer2nd{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.TotalEarningContainer2nd select{
+   height: 40px;
+   width: 170px;
+   border-radius: 10px;
+   /* outline: none; */
+   border-color: lightgray;
+   
+  }
+.TotalEarningContainer1st{
+    display: flex;
+   gap: 10px;
+   height: 90px;
+   
+}
+
+.TotalEarning{
+    position: relative;
+}
+
+
+.DetailsDiv{
+    height: 130px;
+    width:99.59%;
+    margin-top: -10px;
+    border: 1px solid  #dadee6;
+    position: absolute;
+    color: #203765;
+    display: flex;
+    gap: 82px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+    background-color: #f0f4fc ;
+}
+
+.DetailsDiv div h2{
+    margin-top: -10px;
+}
+
+
+
+/* ///////////////////////// AppSheCard ////// */
+.AppSheCard{
+    /* border: 1px solid  #3169da; */
+    gap:30px;
+    margin-top: 150px;
+   display: flex;
+    
+}
+.Appoinment{
+ width:49.88%;
+ border: 1px solid  lightgray;
+ height: 560px;
+ border-radius: 10px;
+ cursor: pointer;
+}
+
+.Appoinmenthead{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 12px;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.Appoinmenthead div h2{
+    color:#29375f;
+}
+
+.AppoinmentPeopeDetaills{
+    height: 450px;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.schedule{
+    width:49.88%;
+    border: 1px solid  lightgray;
+    height: 560px;
+    border-radius: 10px;
+}
+
+.Waitingqueue{
+    display: flex;
+    padding-left: 16px;
+    padding-right: 12px;
+    justify-content: space-between;
+}
+
+
+
+/* //////////////////////////cards */
+
+.AvatarInfo{
+    display: flex;
+    padding-left: 4px;
+    padding-right: 4px;
+     margin-top: 20px;
+    justify-content: space-between;
+
+}
+
+.AvatarInfodata{
+    display: flex;
+    gap: 2px;
+    font-size: 14px;
+}
+
+.AvatarInfodata2{
+    margin-top:10px ;
+    font-size: 11px;
+    background-color: burlywood;
+    height: fit-content;
+    display: flex;
+    border-radius: 10px;
+    padding: 3px;
+
+}
+
+.ViewBtn{
+    display: flex;
+    
+    width: 80%;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-top: 9px;
+}
+.sheduleUndrData{
+    height: 436px;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.AnytimeCunsult{
+    width: 90%;
+    /* display: flex; */
+    border-radius: 10px;
+    margin:14px auto;
+    border: 1px solid lightgray;
+    height: 50px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* /////////////////////////// */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    --webkit-transform: translateX(26px);
+    --ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+  .greenData1{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(144, 238, 144,0.3);
+    padding: 8px;
+    color: green;
+    font-weight: bold;
+    border-radius: 4px;
+    
+  }
+
+  .greenData1 div{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .greenData2{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(144, 238, 144,0.3);
+    padding: 8px;
+    margin-top: 14px;
+    color: green;
+    border-radius: 4px;
+    font-weight: bold;
+    
+  }
+
+  .greenData2 div{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .redData2{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(238, 144, 144, 0.3);
+    padding: 8px;
+    margin-top: 14px;
+    color: red;
+    border-radius: 4px;
+    font-weight: bold;
+    
+  }
+
+  .redData2 div{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  

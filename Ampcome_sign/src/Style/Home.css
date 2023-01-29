@@ -1,0 +1,20 @@
+.parent_home{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 600px;
+    width:90%;
+    border: 1px solid red;
+}
+
+.sidebar{
+    flex: 0.6;
+    border: yellow;
+    background-color: yellow;
+}
+.maindiv{
+    flex: 9.4;
+    border: black;
+    background-color: aqua;
+    
+}

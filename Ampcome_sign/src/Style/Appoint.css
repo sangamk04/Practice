@@ -1,0 +1,101 @@
+.AppointSideBar {
+  
+  display: flex;
+  
+}
+.maindivApp{
+    width: 6%;
+    height: 140vh;
+    background-color: #203765;
+}
+
+.maindivApp1 {
+  margin-top: 190px;
+  /* position: absolute; */
+}
+
+.imgUserapp img {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+.Logosimgapp {
+  padding: 10px;
+  margin-top: 180px;
+}
+
+.LogosApp {
+  color: lightgray;
+  padding: 10px;
+}
+
+.LogosApp :hover {
+  color: white;
+}
+
+.AppointSideBar {
+  display: flex;
+  gap: 40px;
+}
+.AppointMenttableSection{
+    width:90%;
+    /* border: 1px solid red; */
+}
+
+.AppointMenttableSectiontop{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px; 
+    cursor: pointer;
+}
+
+.AppointMenttableSection div h1{
+color: #203765;
+}
+
+.Appp{
+    color: #203765;
+}
+
+.btnAppoint{
+    display: flex;
+    padding: 3px;
+    gap: 3px;
+    color: red;
+    border: 1px solid red;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.FaSearch{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -29px;
+    color: lightgray;
+}
+
+.hr{
+    padding-right: 20px;
+}
+
+.inputAppointment{
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.inputAppointment div input{
+  width: 250px;
+  height: 36px;
+  border-radius: 10px;
+  
+}
+
+.inputAppointment select{
+width: 150px;
+border-radius: 10px;
+height: 40px;
+}
