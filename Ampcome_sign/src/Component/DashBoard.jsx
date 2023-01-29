@@ -11,7 +11,7 @@ import { data1 } from "../Database/data1";
 import Activity from "./Activity";
 import { LineGraph } from "./LineGraph";
 import {useNavigate} from "react-router-dom"
-// import { json } from "react-router-dom";
+
 
 const DashBoard = () => {
 const navigate = useNavigate()
