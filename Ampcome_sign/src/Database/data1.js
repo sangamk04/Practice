@@ -1,5 +1,5 @@
 import { BiLogIn } from "react-icons/bi";
-// import 
+
 export const data1 = [{
     img_avtar:"https://i.ibb.co/khHFjRv/Ellipse-7.png",
     name:"Prajeesh",
