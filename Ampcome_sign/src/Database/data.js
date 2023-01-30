@@ -3,7 +3,7 @@
 export const appointment=[
     {
         order_id:2422562,
-        patient_name:"Risha Mahin",
+        patient_name:"sam ",
         patient_age:26,
         patient_gender:"F",
         consultation_logo:"",
