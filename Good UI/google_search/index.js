@@ -278,3 +278,4 @@ inputBox.onkeyup = (e) => {
     show(res);
   }, 3000);
 };
+
