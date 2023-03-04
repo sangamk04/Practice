@@ -247,6 +247,7 @@ table {
     white-space: normal;
 }
 
+
 @media (min-width: 48em) {
     .responsive-table tr {
         display: table-row;
