@@ -4,8 +4,7 @@ import Login from '../Component/Login'
 import DashBoard from '../Component/DashBoard'
 import Appoint from '../Component/Appoint'
 const MainRoute = () => {
-  return (
-    
+  return (    
     <>
     <Routes>
         <Route path='/' element={<Login/> }/>
