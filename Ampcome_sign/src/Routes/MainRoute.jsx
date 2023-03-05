@@ -5,6 +5,7 @@ import DashBoard from '../Component/DashBoard'
 import Appoint from '../Component/Appoint'
 const MainRoute = () => {
   return (
+    
     <>
     <Routes>
         <Route path='/' element={<Login/> }/>
