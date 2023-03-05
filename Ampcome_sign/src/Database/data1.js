@@ -9,6 +9,7 @@ export const data1 = [{
     Logo1name:"In Person",
     Logo2name:"To be finalized"
 },
+                      
 {
     img_avtar:"https://i.ibb.co/vDZMp50/Ellipse-231.png",
     name:"Ritu k",
