@@ -6,6 +6,7 @@ let popup = document.getElementById("popup");
 let main = document.getElementById("main");
 let items = 1;
 
+
 let scrollFun = () => {
   for (let i = 0; i < 25; i++) {
     let newList = document.createElement("li");
