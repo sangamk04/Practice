@@ -19,7 +19,6 @@ let scrollFun = () => {
     listDiv.append(newList);
   }
 };
-
 listDiv.addEventListener("scroll", function () {
   if (listDiv.scrollTop + listDiv.clientHeight >= listDiv.scrollHeight) {
     scrollFun();
