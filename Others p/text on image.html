@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .sam {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .nature {
+                width: 80%;
+                padding: 0;
+            }
+
+            .sam {
+                height: 150px;
+                width: 150px;
+            }
+
+
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+
+            .nature,
+            .sam {
+                width: 100%;
+                padding: 0;
+            }
+
+            .sam {
+                margin-top: 10rem;
+                /* border-radius: 0; */
+                height: 100px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img class="nature" src="https://www.w3schools.com/howto/img_snow_wide.jpg">
+        <img class="sam" src="https://avatars.githubusercontent.com/u/99814514?v=4">
+        <div>sam</div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
