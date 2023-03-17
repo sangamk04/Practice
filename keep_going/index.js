@@ -1,7 +1,5 @@
 
 var 
-
-
 Doc = document , TwL = TweenLite , E0=Sine.easeInOut , E1=Sine.easeIn , E2=Sine.easeOut 
 B = Doc.getElementById('B') ,  UB = Doc.getElementById('UB') ,
 F = Doc.getElementById('FF') , H = Doc.getElementById('HF') ;
