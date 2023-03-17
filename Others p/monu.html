@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            margin-top: 2%;
+            margin-left: 10%;
+            width: 80%;
+            display: flex;
+        }
+
+        .about {
+            font-size: 70px;
+            background-color: aqua;
+            border: 1px solid red;
+            /* text-align: center; */
+            position: relative;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            padding: 100px;
+            /* margin-left: -100px; */
+        }
+
+        .ab {
+            padding: 60px;
+            /* margin-top: 2%; */
+            border: 1px solid black;
+            /* height: 200px;
+            width: 500px; */
+            background-color: blue;
+            margin-left: -60px;
+            margin-top: 8rem;
+            /* position: absolute; */
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                margin-top: 2%;
+                margin-left: 10%;
+                width: 80%;
+                display: grid;
+                /* display: flex; */
+            }
+
+            .about {
+                text-align: center;
+                justify-content: center;
+                font-size: 50px;
+                background-color: aqua;
+                border: 1px solid red;
+                /* text-align: center; */
+                /* position: relative; */
+                border-radius: 0%;
+                /* height: 20px; */
+                /* width: 80px; */
+                /* padding: 80px; */
+                /* margin-left: -100px; */
+            }
+
+            .ab {
+                /* width: 100%; */
+                /* padding: 40px; */
+
+                border: 1px solid black;
+                /* height: 200px;
+            width: 500px; */
+                font-size: 30px;
+                background-color: blue;
+                /* margin-left: -60px; */
+                margin-top: 1rem;
+                margin-left: 0.5rem;
+                /* position: absolute; */
+            }
+
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+
+            .nature,
+            .sam {
+                width: 100%;
+                padding: 0;
+            }
+
+            .sam {
+                margin-top: 10rem;
+                /* border-radius: 0; */
+                height: 100px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <img class="nature" src="https://www.w3schools.com/howto/img_snow_wide.jpg"> -->
+        <!-- <img class="sam" src="https://avatars.githubusercontent.com/u/99814514?v=4"> -->
+        <div class="about">About</div>
+        <div class="ab">Dry hair looks brittle, damaged, and is difficult to style or manage. One of the most advertised
+            remedies for dry hair is olive oil. But among the many oils available, is olive oil effective for dry hair?
+            Apart from keeping […]</div>
+        <div></div>
+    </div>
+</body>
+
+</html>
