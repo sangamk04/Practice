@@ -51,5 +51,3 @@ function main() {
     console.log('C');
    }
    main();
-
-
