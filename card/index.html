@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: #0062cc;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://avatars.githubusercontent.com/u/99814514?v=4" alt="Image" class="card-img">
+        <div class="card-content">
+          <h2 class="card-title">Title</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in diam quis libero finibus dignissim at sed sapien.</p>
+          <button class="card-btn">Read More</button>
+        </div>
+      </div>
+</body>
+</html>
+<script>
+    window.addEventListener("resize", function() {
+  if (window.innerWidth < 768) {
+    document.querySelector(".card-img").style.width = "100%";
+  } else {
+    document.querySelector(".card-img").style.width = "50%";
+  }
+});
+</script>
