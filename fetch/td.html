@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div  id="sam"></div>
+</body>
+</html>
+<script>
+    const getData = async()=>{
+        let res = await fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products")
+        let data = await res.json()
+        display(data.data)
+        console.log(data)
+    }
+    getData()
+
+    const display= (data)=>{
+        data. forEach((e)=>{
+            let div = document.createElement("div")
+            let id= document.createElement("p")           
+            id.innerText=e.id
+            let brand = document.createElement("div")
+            brand.innerText=e.brand
+            div.append(id,brand)
+            document.querySelector("#sam").append(div)
+        })
+    }
+</script>
