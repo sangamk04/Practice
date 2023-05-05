@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    const fib =(n)=>{
+        const fibarray= [0,1];
+        for(var i=2; i<n; i++){
+            fibarray.push(fibarray[i-2]+fibarray[i-1]);
+        }
+        return fibarray
+    }
+    console.log(fib(10));
+</script>
