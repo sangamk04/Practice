@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content-container {
+            height: 100px;
+            /* Set the desired height for the visible content */
+            overflow: hidden;
+        }
+
+        .content {
+            margin: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        #read-more-link {
+            display: none;
+            /* Initially hide the "Read More" link */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><span id="dots1">...</span><span id="more1">Phasellus nec feugiat enim, non tincidunt ante.</span></p>
+        <button class="readMoreBtn" onclick="myFunction(1)" id="myBtn1">Read more</button>
+      </div>
+      
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><span id="dots2">...</span><span id="more2">Phasellus nec feugiat enim, non tincidunt ante.</span></p>
+        <button class="readMoreBtn" onclick="myFunction(2)" id="myBtn2">Read more</button>
+      </div>
+</body>
+
+</html>
+<script>
+    function myFunction(number) {
+  var dots = document.getElementById("dots" + number);
+  var moreText = document.getElementById("more" + number);
+  var btnText = document.getElementById("myBtn" + number);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
