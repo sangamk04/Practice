@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.base-container {
+    display: flex;
+    gap: 20px;
+}
+
+.pizza-base {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#base1 {
+    background-color: black;
+}
+
+#base2 {
+    background-color: #f9e0b0;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blue-dot {
+    background-color: blue;
+}
+
+.red-dot {
+    background-color: red;
+}
+
+.yellow-dot {
+    background-color: yellow;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.draggable-button {
+    cursor: pointer;
+}
