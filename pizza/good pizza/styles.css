@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+.pizza-container {
+  position: relative;
+}
+
+.pizza-base {
+  width: 600px;
+  height: 410px;
+  background-image: url("https://img.freepik.com/premium-photo/pizza-crust-is-being-prepared-surrounded-by-ingredients-including-tomatoes-basil-basil_849898-1119.jpg?size=626&ext=jpg&ga=GA1.2.511520902.1685595683&semt=ais");
+  /* background-color: #f9e0b0; */
+  /* border-radius: 50%; */
+  margin-bottom: 20px;
+  position: relative;
+  border: 8px solid rgb(84, 56, 18);
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  /* border-radius: 50%; */
+  position: absolute;
+}
+
+.blue-dot {
+  background-image: url("https://i.postimg.cc/cJD8YGq1/Screenshot-517-removebg-preview.png");
+}
+
+.onion-dot {
+  border: none;
+  background-image: url("https://i.postimg.cc/mgwXFk8v/Screenshot-515-removebg-preview.png");
+}
+
+.yellow-dot {
+  background-image: url("https://i.postimg.cc/MHLxwtjY/Screenshot-516-removebg-preview.png");
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.draggable-button {
+  cursor: pointer;
+}
+
+.onion-image {
+  height: 100px;
+  width: 100px;
+}
