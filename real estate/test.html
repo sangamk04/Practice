@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate UI</title>
+<style>
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  /* background-color: #bebebe; */
+  padding: 10px 0;
+  border-radius: 20px;
+  /* border: 1px solid red; */
+  box-shadow: 0px 0px 2px 2px rgb(214, 214, 214);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 10px 20px;
+  cursor: pointer; 
+}
+
+.navbar li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.search-bar {
+  display: none; 
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: #28405d ;
+  color: white;
+  border: none;
+}
+
+.menu {
+    box-shadow: 0px 0px 2px 2px rgb(214, 214, 214);
+  /* border: 1px solid red; */
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+li:hover {
+  background-color: #28405d ;
+  color: white;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    padding: 10px;
+  }
+
+  .search-bar select,
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="menu">
+  <div class="header">
+    <ul class="navbar">
+      <li onclick="showSearchBar('buy')">Buy</li>
+      <li onclick="showSearchBar('rent')">Plot/Land</li>
+      <li onclick="showSearchBar('commercial')">Commercial</li>
+      <li onclick="showSearchBar('projects')">Projects</li>
+    </ul>
+  </div>
+  <div id="buySearchBar" class="search-bar">
+    <select>
+      <option>All Residential</option>
+      <option>Flat Apartment</option>
+      <option>Residential Land</option>
+      <option>Serviced Apartments</option>
+      <option>Independent/Builder Floor</option>
+      <option>1 RK/Studio Apartment</option>
+      <option>Independent House Villa</option>
+      <option>Farm House</option>
+    </select>
+    <input type="text" placeholder="Search '3 BHK for sale in Mumbai'">
+    <button>Search</button>
+  </div>
+  <div id="rentSearchBar" class="search-bar">
+    <select>
+      <option>All Residential</option>
+      <option>Flat Apartment</option>
+      <option>Residential Land</option>
+      <option>Serviced Apartments</option>
+      <option>Independent/Builder Floor</option>
+      <option>1 RK/Studio Apartment</option>
+      <option>Independent House Villa</option>
+      <option>Farm House</option>
+    </select>
+    <input type="text" placeholder="Search '3 BHK for sale in Mumbai'">
+    <button>Search</button>
+  </div>
+  <div id="commercialSearchBar" class="search-bar">
+    <select>
+      <option>Buy</option>
+      <option>Lease</option>
+      <option>Invest</option>
+    </select>
+    <select>
+      <option>All Commercial</option>
+      <option>Flat Apartment</option>
+      <option>Residential Land</option>
+      <option>Serviced Apartments</option>
+      <option>Independent/Builder Floor</option>
+      <option>1 RK/Studio Apartment</option>
+      <option>Independent House Villa</option>
+      <option>Farm House</option>
+    </select>
+    <input type="text" placeholder="Search '3 BHK for sale in Mumbai'">
+    <button>Search</button>
+  </div>
+  <div id="projectsSearchBar" class="search-bar">
+    <select>
+      <option>All Residential</option>
+      <option>Flat Apartment</option>
+    </select>
+    <input type="text" placeholder="Search '3 BHK for sale in Mumbai'">
+    <button>Search</button>
+  </div>
+</div>
+
+<script>
+function showSearchBar(type) {
+  var searchBars = document.querySelectorAll('.search-bar');
+  searchBars.forEach(function(bar) {
+    bar.style.display = 'none';
+  });
+
+  var selectedSearchBar = document.getElementById(type + 'SearchBar');
+  if (selectedSearchBar) {
+    selectedSearchBar.style.display = 'flex';
+  }
+}
+</script>
+
+</body>
+</html>

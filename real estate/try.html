@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<style>
+[type="radio"]:nth-of-type(1):checked ~ .gallery .cardmins:not(.buy_li),
+[type="radio"]:nth-of-type(2):checked ~ .gallery .cardmins:not(.rent_li) {
+  display: none;
+}
+</style>
+</head>
+<body>
+<input type="radio" name="filter" id="buy_li" checked><label>buy_li Media Design</label>
+<input type="radio" name="filter" id="rent_li"><label >rent_li</label>
+<div class="gallery">
+    <figure class="cardmins buy_li">
+        <a href="https://www.bidranker.com/skoda.html">
+        <img loading="lazy" src="https://i.postimg.cc/9M6CBT2p/71bffe6f-c15b-43dc-aabb-f2e3e064af9b-1.jpg" alt="skoda">
+        <figcaption >Speed Skoda</figcaption>
+    </a>
+    </figure>
+    </figure>
+       <figure class="cardmins rent_li">
+        <a href="https://ahabee.in/">
+        <img  loading="lazy" src="https://i.postimg.cc/VvFDKFHs/Screenshot-895.png" alt="ahabeekeeping">
+        <figcaption >AHA Beekeeping</figcaption>
+    </a>
+    </figure>
+    <figure class="cardmins buy_li">
+        <a href="https://www.bidranker.com/area36.html">
+        <img  loading="lazy" src="https://i.postimg.cc/C5Frg6Zm/80096307-0c6a-4850-a342-80d960cbb3a2.jpg" alt="area36">
+        <figcaption >Area 36</figcaption>
+    </a>
+    </figure>
+</div>
+</body>
+</html>

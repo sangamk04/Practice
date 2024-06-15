@@ -1,0 +1,72 @@
+.sam {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.box {
+  width: 100%;
+}
+
+.text {
+  padding: 20px;
+}
+
+.sam span {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.sam i {
+  font-size: 18px;
+}
+
+.button {
+  padding: 10px 20px;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust column width for smaller screens */
+  }
+
+  .text {
+    padding: 15px;
+  }
+
+  .sam span {
+    font-size: 11px;
+  }
+
+  .sam i {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 8px 15px;
+  }
+}
+
+/* Additional media queries for even smaller screens if necessary */
+@media screen and (max-width: 480px) {
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Further adjust column width for very small screens */
+  }
+
+  .text {
+    padding: 10px;
+  }
+
+  .sam span {
+    font-size: 10px;
+  }
+
+  .sam i {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 5px 10px;
+  }
+}
